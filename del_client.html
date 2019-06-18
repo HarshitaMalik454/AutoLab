@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>APP | AutoLAB</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+     <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> AutoLAB</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+ 
+                        <li><a href = "http://127.0.0.1/cgi-bin/AutoLAB/profile.py"><span class = "glyphicon glyphicon-user"></span> Your Profile</a></li>
+                        <li><a href = "index.html"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+
+            <!-- Jumbotron Header -->
+            <div class="jumbotron home-spacer" id="products-jumbotron">
+              <center>
+		  <h1>Select APPLICATIONS!</h1>
+                  	      </center>
+            </div>
+            <hr><form action="http://127.0.0.1/cgi-bin/AutoLAB/app.py" method="POST">
+		 <div class="row text-center" id="item_list">
+                    <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="img/firefox.png" alt="NO">
+                                <div class="caption">
+                                    <input type="checkbox" name="app" value="firefox"><b>Firefox</b></input>
+				 
+						
+                                </div>
+                            </div> 
+                    </div>
+
+                      <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="img/vlc.png" alt="">
+                                <div class="caption">
+                                    
+                                    
+				 <input type="checkbox" name="app" value="vlc"><b>VLC PLayer</b></input>
+						
+                                </div>
+                            </div> 
+                    </div>
+  <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="img/gedit.png" alt="">
+                                <div class="caption">
+                                    
+				 <input type="checkbox" name="app" value="gedit"><b>Gedit</b></input>
+						
+                                </div>
+                            </div> 
+                    </div>
+  <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="img/calculator.png" alt="">
+                                <div class="caption">
+					 <input type="checkbox" name="app" value="calculator"><b>Calculator</b></input>
+						
+                                </div>
+                            </div> 
+                    </div>
+  
+                </div>
+            </div>
+            <!--Item categories listing end-->
+
+<center><button type="submit" name="submit" class="btn btn-primary btn-lg">Submit</button><br><br></center>
+</form>
+        </div>
+			
+        <footer>
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; AutoLAB. All Rights Reserved  |  Contact Us: +91 9772139728  +918755366285</p>	
+                </center>
+            </div>
+        </footer>
+    </body>
+</html>
+    </body>
+</html>
